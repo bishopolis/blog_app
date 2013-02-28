@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  budget: 1
+  channel: MyString
+  experience_level: MyString
+  summary: MyText
+  image: 
+  logo: 
+  price: MyString
+  url: 
+
+two:
+  name: MyString
+  budget: 1
+  channel: MyString
+  experience_level: MyString
+  summary: MyText
+  image: 
+  logo: 
+  price: MyString
+  url: 
