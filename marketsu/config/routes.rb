@@ -1,4 +1,32 @@
 Marketsu::Application.routes.draw do
+  get "users/index"
+
+  get "users/new"
+
+  get "users/show"
+
+  get "users/edit"
+
+  get "users/create"
+
+  get "users/update"
+
+  get "users/destroy"
+
+  get "tools/index"
+
+  get "tools/new"
+
+  get "tools/show"
+
+  get "tools/edit"
+
+  get "tools/create"
+
+  get "tools/update"
+
+  get "tools/destroy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
