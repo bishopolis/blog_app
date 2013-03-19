@@ -1,4 +1,7 @@
 Marketsu::Application.routes.draw do
+  
+  match "/results" => "tools#results"
+
   get "users/index"
 
   get "users/new"

@@ -1,0 +1,33 @@
+<form accept-charset="UTF-8" action="/posts" class="new_post" id="new_post" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="HaY8eIjpZNyij/abhqWfenHzJftOYgHlazaIJpQrA1Y=" /></div>
+
+  <div class="field">
+    <label for="post_budget">Budget</label><br />
+    <select name="budget">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat" selected>Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="post_type">Marketing Type</label><br />
+    <select name="type">
+      <option value="email">Email</option>
+      <option value="seo">SEO</option>
+      <option value="social" selected>Social Media</option>
+      <option value="content">Content</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="post_experience">Marketing Experience</label><br />
+    <select name="experience">
+      <option value="one">1 Year</option>
+      <option value="two">2 Years</option>
+      <option value="three" selected>3 Years</option>
+      <option value="four">4 Years</option>
+    </select>
+  </div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Create Post" />
+  </div>
+</form>
