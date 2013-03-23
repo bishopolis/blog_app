@@ -1,7 +1,7 @@
 Marketsu::Application.routes.draw do
 
 
-  root :to => 'tools#index'
+  root :to => 'users#new'
 
   match "/results" => "tools#results"
   match "tools/profile" => "tools#profile"

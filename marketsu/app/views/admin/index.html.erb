@@ -1,16 +1,23 @@
 <h1>Admin Tool Index</h1>
 
+
 <section class="results">
-	<div class="result">
-		<h2>Name</h2>
+
+<% @tools.each do |tool| %>
+<div class="result">
+		<h2><%= Name %></h2>
 		<ul>
 			<li><a href="/show">Show</a></li>
 			<li><a href="/edit">Edit</a></li>
 			<li><a href="/delete">Delete</a></li>
 		</ul>
-		<p class="summary">SummarySummarySummary SummarySummarySummary SummarySummary SummarySummary</p>
-		<span><a href="http://www.mailchimp.com">http://www.mailchimp.com</a></span>
+		<p class="summary"></p>
+		<span><a href="<%= tool.url %>"><%= tool.url %></a></span>
 	</div> <!-- result -->
+<% end %>
+</section> <!-- results -->
+
+<section class="results">	
 	<div class="result">
 		<h2>Name</h2>
 		<ul>

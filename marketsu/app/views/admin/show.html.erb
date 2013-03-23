@@ -1,12 +1,54 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p> <p><%= link_to admin_path %></p>
+<p><%= link_to new_admin_path %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @tool.name %>
-</p>
-
-<p>
-  <b>Summary:</b>
-  <%= @tool.summary %>
-</p>
-
+<section class="intro">
+	<img src="" class="logo" />
+	<h1 class="name"><%= @tool.name %></h1>
+	<div class="sign-up">
+		<p>Sign Up!... please...</p>
+	</div> <!-- signup -->
+</section> <!-- intro -->
+<section class="info">
+	<div class="summary">
+		<p><%= @tool.summary %></p>
+	</div> <!-- summary -->
+	<div class="screenshots">
+		<img src="/img/mailchimp_screenshot.jpg" />
+	</div> <!-- screenshots -->
+	<div class="best-for">
+		<p>Best for:</p>
+		<ul>
+			<li><%= @tool.budget %></li>
+			<li><%= @tool.channel %></li>
+			<li><%= @tool.experience_level %></li>
+		</ul>
+	</div> <!-- best-for -->
+	<div class="plans">
+		<div class="plan">
+			<h4>Gold</h4>
+			<h4>$39</h4>
+			<p>This is a description and you should read it.</p>
+		</div> <!-- plan -->
+		<div class="plan">
+			<h4>Gold</h4>
+			<h4>$39</h4>
+			<p>This is a description and you should read it.</p>
+		</div> <!-- plan -->
+		<div class="plan">
+			<h4>Gold</h4>
+			<h4>$39</h4>
+			<p>This is a description and you should read it.</p>
+		</div> <!-- plan -->
+	</div> <!-- plans -->
+	<div class="sign-up">
+		<p>Sign Up!... please...</p>
+	</div> <!-- signup -->
+</section> <!-- info -->
+<section class="filters">
+	<div class="filter">
+	</div> <!-- filter -->
+	<div class="filter">
+	</div> <!-- filter -->
+	<div class="filter">
+	</div> <!-- filter -->
+</section> <!-- filters -->

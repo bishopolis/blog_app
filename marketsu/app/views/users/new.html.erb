@@ -1,34 +1,15 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="hero-unit">
+    <div class="hero-inner">
+      <h2>The Great Marketing Tool</h2>
+    <h1>Recommendator</h1>      
+    <p>Suffering marketing tool paralysis? Simply answer three questions and the Recommendator will make everything better.</p>
+  </div> <!-- hero-inner -->
+</div> <!-- hero-unit -->
+
+<img src="" />
+<img src="" />
+<img src="" />
+
+<%= render 'form' %>
 
 
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :budget %><br />
-    <%= f.select :budget, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-  </div>
-  <div class="field">
-    <%= f.label :channel %><br />
-    <%= f.select :channel, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>  
-  </div>
-  <div class="field">
-    <%= f.label :experience_level %><br />
-    <%= f.select :experience_level, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
